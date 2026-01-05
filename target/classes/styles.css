@@ -1,0 +1,422 @@
+/* Modern MONAS Ticket System Stylesheet */
+
+/* ==================== Global Styles ==================== */
+.root {
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+}
+
+/* ==================== Main Layout ==================== */
+.main-layout {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.content-area {
+    -fx-background-color: transparent;
+}
+
+/* ==================== Header ==================== */
+.header {
+    -fx-background-color: linear-gradient(to right, #C41E3A, #8B0000);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 0, 5);
+}
+
+.header-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 0, 1, 1);
+}
+
+.header-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: rgba(255,255,255,0.9);
+}
+
+.saldo-box {
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 20px;
+    -fx-padding: 8 20 8 20;
+}
+
+.saldo-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.saldo-amount {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD700;
+}
+
+/* ==================== Cards ==================== */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0, 0, 5);
+}
+
+.card-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.card-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+
+/* ==================== Buttons ==================== */
+.primary-button {
+    -fx-background-color: linear-gradient(to bottom, #C41E3A, #8B0000);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 30 12 30;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(196,30,58,0.4), 10, 0, 0, 3);
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #d63447, #a31226);
+    -fx-effect: dropshadow(gaussian, rgba(196,30,58,0.6), 15, 0, 0, 5);
+}
+
+.primary-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #8B0000, #5a0000);
+}
+
+.secondary-button {
+    -fx-background-color: white;
+    -fx-text-fill: #C41E3A;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 30 12 30;
+    -fx-background-radius: 25px;
+    -fx-border-color: #C41E3A;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #fff5f5;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: #ffe0e0;
+}
+
+/* ==================== Text Fields ==================== */
+.modern-text-field {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 10px;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-padding: 12 15 12 15;
+    -fx-font-size: 14px;
+    -fx-pref-width: 350px;
+}
+
+.modern-text-field:focused {
+    -fx-border-color: #C41E3A;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(196,30,58,0.2), 10, 0, 0, 0);
+}
+
+/* ==================== Info Box ==================== */
+.info-box {
+    -fx-background-color: #e7f3ff;
+    -fx-background-radius: 15px;
+    -fx-padding: 20;
+    -fx-border-color: #b3d9ff;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+}
+
+.info-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0066cc;
+}
+
+.info-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #004080;
+}
+
+/* ==================== Question Label ==================== */
+.question-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* ==================== JakCard Preview ==================== */
+.jakcard-preview {
+    -fx-background-color: linear-gradient(to bottom right, #1a5276, #2980b9);
+    -fx-background-radius: 15px;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 0, 5);
+}
+
+.jakcard-bank {
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.jakcard-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #FFD700;
+    -fx-font-weight: bold;
+}
+
+.jakcard-desc {
+    -fx-font-size: 11px;
+    -fx-text-fill: rgba(255,255,255,0.8);
+}
+
+/* ==================== Success/Warning Messages ==================== */
+.success-message {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #28a745;
+}
+
+.warning-message {
+    -fx-font-size: 16px;
+    -fx-text-fill: #856404;
+    -fx-max-width: 400px;
+}
+
+.saldo-info {
+    -fx-font-size: 16px;
+    -fx-text-fill: #6c757d;
+}
+
+/* ==================== Ticket Type Cards ==================== */
+.ticket-type-card {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-color: #e9ecef;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+.ticket-type-card-hover {
+    -fx-border-color: #C41E3A;
+    -fx-effect: dropshadow(gaussian, rgba(196,30,58,0.3), 20, 0, 0, 5);
+}
+
+.ticket-type-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.ticket-type-desc {
+    -fx-font-size: 12px;
+    -fx-text-fill: #7f8c8d;
+}
+
+.ticket-price-item {
+    -fx-font-size: 13px;
+    -fx-text-fill: #34495e;
+}
+
+/* ==================== Category Cards ==================== */
+.category-card {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-color: #e9ecef;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+.category-card-hover {
+    -fx-border-color: #C41E3A;
+    -fx-effect: dropshadow(gaussian, rgba(196,30,58,0.3), 20, 0, 0, 5);
+}
+
+.category-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.category-desc {
+    -fx-font-size: 12px;
+    -fx-text-fill: #7f8c8d;
+}
+
+.category-price {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #C41E3A;
+}
+
+/* ==================== Quantity Selector ==================== */
+.quantity-btn {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-min-width: 45px;
+    -fx-min-height: 45px;
+    -fx-background-radius: 50%;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 50%;
+    -fx-cursor: hand;
+}
+
+.quantity-btn:hover {
+    -fx-background-color: #C41E3A;
+    -fx-text-fill: white;
+    -fx-border-color: #C41E3A;
+}
+
+.quantity-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-alignment: center;
+}
+
+.total-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #C41E3A;
+}
+
+/* ==================== Saldo Info Box ==================== */
+.saldo-info-box {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 10px;
+    -fx-padding: 15;
+}
+
+.current-saldo {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6c757d;
+}
+
+.info-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #856404;
+}
+
+/* ==================== Receipt Card ==================== */
+.receipt-card {
+    -fx-background-color: #fffef5;
+    -fx-background-radius: 15px;
+    -fx-border-color: #ffd700;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(255,215,0,0.3), 15, 0, 0, 5);
+}
+
+.receipt-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #C41E3A;
+}
+
+.receipt-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6c757d;
+}
+
+.receipt-value {
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+.receipt-total {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #C41E3A;
+}
+
+.receipt-status {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #28a745;
+}
+
+.receipt-saldo {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6c757d;
+}
+
+/* ==================== Thank You Screen ==================== */
+.thank-you-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.visit-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+
+/* ==================== Separator ==================== */
+.separator {
+    -fx-background-color: #e9ecef;
+}
+
+.separator .line {
+    -fx-border-color: #e9ecef;
+    -fx-border-width: 1px 0 0 0;
+}
+
+/* ==================== ScrollBar Styling ==================== */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(196,30,58,0.3);
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(196,30,58,0.5);
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape: "";
+    -fx-pref-height: 0;
+}

@@ -1,0 +1,10 @@
+database\Database.class
+sistem\Sistem$TransaksiResult.class
+sistem\Sistem.class
+controller\MonasController.class
+model\JakCard.class
+application\MainApp.class
+model\BuktiPembelian.class
+model\Tiket.class
+model\Pengunjung.class
+model\Transaksi.class
