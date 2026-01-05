@@ -195,4 +195,6 @@ Dibuat untuk memenuhi tugas Remedial Pemrograman Berorientasi Objek
 ## 📄 License
 
 Project ini dibuat untuk keperluan akademik.
+Ahmad Syamil Syauqie ©
+
 
